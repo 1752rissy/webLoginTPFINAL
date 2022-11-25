@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="dropdown">
+    <a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="">
+        IR AL LOGIN
+        <b class="caret"></b>
+    </a>
+    <a class="dropdown-toggle" id="dLabelRegistro" role="button" data-toggle="dropdown" data-target="#" href="">
+        IR AL REGISTRO
+        <b class="caret"></b>
+    </a>
+
+
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+        <li>
+            <a href="@Url.Action("Login", "Login")" class="elements">
+                <span>LOGIN DE USUARIO</span>
+            </a>
+        </li>
+    </ul>
+
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabelRegistro">
+        <li>
+            <a href="@Url.Action("Registrar", "Registro")" class="elements">
+                <span>REGISTRO DE USUARIO</span>
+            </a>
+        </li>
+    </ul>
+
+</div>
+
+
+
+
+<script>
+    $('.dropdown-toggle').dropdown()
+</script>
+
